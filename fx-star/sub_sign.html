@@ -1,0 +1,552 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>F(X)</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="js/jquery-1.12.2.min.js"></script>
+<script src="js/jquery.bxslider.js"></script>
+<script src="js/jquery.bxslider.min.js"></script>
+<script src="js/main.js"></script>
+</head>
+<body>
+<div id="wrap">
+	<div id="header">
+		<h1 class="logo"><a href="#" class=""></a></h1>
+		<div class="h_cont">
+			<div class="lnb">
+				<a href="#"><strong>Login</strong></a>
+				<span class="txt_bar">|</span>
+				<a href="#">Sign Up</a>
+			</div>
+			<!-- /lnb -->
+			<div class="gnb">
+				<ul class="h_menu">
+				<li>
+				<a href="#"><span>Notice</span></a>
+				</li>
+				<li>
+					<a href="#"><span>Profile</span></a>
+				</li>
+				<li>
+					<a href="#"><span>DiscoGraphy</span></a>
+				</li>
+				<li>
+					<a href="#"><span>Gallery</span></a>
+				</li>
+				<li>
+					<a href="#"><span>videos</span></a>
+				<li>
+				<li>
+					<a href="#"><span>Album</span></a>
+				<li>
+					<a href="#"><span>event</span></a>
+				</li>
+				</ul>
+				<!-- /h_menu -->
+				<div class="h_srch sp">
+					<input type="search" id="placeholder">
+					<label for="placeholder">f(x) - 4 Walls</label>
+					<button type="submit" class="sp">검색</button>
+				</div>
+				<!-- /h_srch -->
+			</div>
+			<!-- /gnb -->
+		</div>
+		<!-- /h_cont -->
+	</div>
+	<hr>
+	<!-- /header -->
+	<div id="container">
+	<div id="snb">
+		<button type="button" class="btn_snb_lft sp">이전</button>
+		<div class="snb_slidewrap">
+		<ul class="snb_menu">
+			<li><a href="#">F(x)</a></li>
+			<li><a href="#">LUNA</a></li>
+			<li><a href="#">AMBER</a></li>
+			<li><a href="#">VICTORIA</a></li>
+			<li><a href="#">KRYSTAL</a></li>
+		</ul>
+		<!-- /snb_menu -->
+		</div>
+		<!-- /snb_slidewrap -->
+		<button type="button" class="btn_snb_rgt sp">다음</button>
+	</div>
+	<!-- /snb -->
+		<div class="content">
+			<div class="cnttop">
+				<h2 class="h2_lf">SIGN UP</h2>
+			</div>
+			<form>
+			<fieldset class="signup kor">
+			<legend class="blind">회원가입</legend>
+				<table>
+				<caption class="blind"></caption>
+				<colgroup><col style="width:150px"><col style="width:552px"></colgroup>
+					<tbody>
+					<tr class="pad_top">
+						<th scope="row"><label for="signup_id">아이디</label></th>
+						<td>
+							<div class="signup_input sp">
+								<input type="text" id="signup_id">
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row"><label for="signup_email">이메일</label></th>
+						<td>
+							<div class="signup_input sp">
+								<input type="text" id="signup_email">
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row"><label for="signup_password">비밀번호</label></th>
+						<td>
+							<div class="signup_input sp">
+								<input type="text" id="signup_password">
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row"><label for="signup_repassword">비밀번호 재입력</label></th>
+						<td>
+							<div class="signup_input sp">
+								<input type="text" id="signup_repassword">
+							</div>
+						</td>
+					</tr>
+					<tr class="pad_top" style="border-top:1px solid #dedede">
+						<th scope="row"><label for="signup_name">이름</label></th>
+						<td>
+							<div class="signup_input sp">
+								<input type="text" id="signup_name" title="이름을 입력해주세요.">
+								<label for="signup_name">이름</label>
+							</div>							
+							<div class="signup_input sp">
+								<input type="text" id="signup_firstname" title="성을 입력해주세요.">
+								<label for="signup_firstname">성</label>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">성별</th>
+						<td>
+						<span class="signup_radio">
+							<input type="radio" id="female" name="sex"><label for="female">여성</label>	
+						</span>
+						<span class="signup_radio">					
+							<input type="radio" id="male" name="sex"><label for="male">남성</label>
+						</span>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row"><label for="signup_birth">츨생년도</label></th>
+						<td>
+						<select id="signup_birth">
+							<option>년도</option>
+							<option>1994</option>
+							<option>1994</option>
+							<option>1994</option>
+							<option>1994</option>
+							<option>1994</option>
+							<option>1994</option>
+							<option>1994</option>
+							<option>1994</option>
+						</select>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row"><label for="signup_country">국가</label></th>
+						<td>
+						<select id="signup_country">
+							<option>국가</option>
+							<option>대한민국</option>
+							<option>대한민국</option>
+							<option>대한민국</option>
+							<option>대한민국</option>
+							<option>대한민국</option>
+						</select>
+						</td>
+					</tr>
+					</tbody>
+				</table>
+				<div class="agreement">
+					<input type="radio" id="signup_agree"><label for="signup_agree"><a href="#">이용약관</a>에 동의합니다.</label>
+				</div>		
+			</fieldset>
+			<!-- /signup kor -->
+			<div class="signup_btn">
+				<button type="submit" class="sp btn_signup">회원가입</button>
+				<button type="reset" class="sp btn_reset">다시작성</button>
+			</div>
+			</form>
+			<!-- /form -->
+			<form>
+			<fieldset class="signup eng">
+			<legend class="blind">register</legend>
+				<table>
+				<caption class="blind"></caption>
+				<colgroup><col style="width:150px"><col style="width:552px"></colgroup>
+					<tbody>
+					<tr class="pad_top">
+						<th scope="row"><label for="signup_id_eng">ID</label></th>
+						<td>
+							<div class="signup_input sp">
+								<input type="text" id="signup_id_eng">
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row"><label for="signup_email_eng">Your Email</label></th>
+						<td>
+							<div class="signup_input sp">
+								<input type="text" id="signup_email_eng">
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row"><label for="signup_password_eng">Password</label></th>
+						<td>
+							<div class="signup_input sp">
+								<input type="text" id="signup_password_eng">
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row"><label for="signup_repassword_eng">Re-enter Password</label></th>
+						<td>
+							<div class="signup_input sp">
+								<input type="text" id="signup_repassword_eng">
+							</div>
+						</td>
+					</tr>
+					<tr class="pad_top" style="border-top:1px solid #dedede">
+						<th scope="row"><label for="signup_name_eng">Name</label></th>
+						<td>
+							<div class="signup_input sp">
+								<input type="text" id="signup_name_eng" title="please enter your last name.">
+								<label for="signup_name_eng">Last</label>
+							</div>							
+							<div class="signup_input sp">
+								<input type="text" id="signup_firstname_eng" title="please enter your first name.">
+								<label for="signup_firstname_eng">First Name</label>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">Sex</th>
+						<td>
+						<span class="signup_radio">
+							<input type="radio" id="female_eng" name="sex"><label for="female_eng">Female</label>	
+						</span>
+						<span class="signup_radio">					
+							<input type="radio" id="male_eng" name="sex"><label for="male_eng">Male</label>
+						</span>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row"><label for="signup_birth_eng">Year of Birth</label></th>
+						<td>
+						<select id="signup_birth_eng">
+							<option>Birth</option>
+							<option>1994</option>
+							<option>1994</option>
+							<option>1994</option>
+							<option>1994</option>
+							<option>1994</option>
+							<option>1994</option>
+							<option>1994</option>
+							<option>1994</option>
+						</select>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row"><label for="signup_country_eng">Country</label></th>
+						<td>
+						<select id="signup_country_eng">
+							<option>Country</option>
+							<option>Republic of Korea</option>
+							<option>Republic of Korea</option>
+							<option>Republic of Korea</option>
+							<option>Republic of Korea</option>
+							<option>Republic of Korea</option>
+						</select>
+						</td>
+					</tr>
+					</tbody>
+				</table>
+				<div class="agreement">
+					<input type="radio" id="signup_agree_eng"><label for="signup_agree_eng">I accept the <a href="#">Terms and Conditions.</a></label>
+				</div>		
+			</fieldset>
+			<!-- /signup kor -->
+			<div class="signup_btn">
+				<button type="submit" class="sp btn_signup_eng">회원가입</button>
+				<button type="reset" class="sp btn_reset_eng">다시작성</button>
+			</div>
+			</form>
+		</div>
+		<!-- /content -->
+		<div class="aside">
+			<div class="bx_slide">
+			<div class="bx_slide_img_gr">
+				<ul class="slide_img">
+					<li><img src="img/mainBanner_1.jpg" width="246" height="246" alt=""></li>
+					<li><img src="img/mainBanner_1.jpg" width="246" height="246" alt=""></li>
+					<li><img src="img/mainBanner_1.jpg" width="246" height="246" alt=""></li>
+					<li><img src="img/mainBanner_1.jpg" width="246" height="246" alt=""></li>
+				</ul>
+				<!-- /slide_img -->
+			</div>
+			<!-- /bx_slide_img_gr -->
+			<div class="bx_slide_indi">
+				<div class="btn_indi">
+					<a data-slide-index="0" href="#" class="sp active">1</a>
+					<a data-slide-index="1" href="#" class="sp">2</a>
+					<a data-slide-index="2" href="#" class="sp">3</a>
+					<a data-slide-index="3" href="#" class="sp last">4</a>
+				</div>
+			</div>
+			<!-- /bx_slide_indi -->
+			</div>
+			<!-- /bx_slide-->
+			<div class="songlist">
+				<h3>RECOMMENDED SONGS</h3>
+				<table>
+				<caption class="blind">추천 노래</caption>
+				<colgroup><col style="width:25px"><col style="width:37px"><col style="width:27px"></colgroup>
+				<tbody>
+				<tr class="checked">
+					<td class="check right"><input style="vertical-align:middle" type="checkbox" value="1" title="4 Walls - 선택"></td>
+					<td class="ranking">1</td>
+					<td class="title left"><em>4 Walls<span class="album">  -  4 Walls - The...</span></em></td>
+				</tr>
+				<tr>
+					<td class="check right another"><input style="vertical-align:middle" type="checkbox" value="2" title="Deja Vu - 선택"></td>
+					<td class="ranking another">2</td>
+					<td class="title left another"><em>Deja Vu<span class="album">  -  4 Walls - The 4th Album</span></em></td>
+				</tr>
+				<tr>
+					<td class="check right"><input style="vertical-align:middle" type="checkbox" value="3" title="첫 사랑니 (Rum Pum Pum Pum) - 선택"></td>
+					<td class="ranking">1</td>
+					<td class="title left"><em>첫 사랑니 (Rum Pum Pum Pum)<span class="album"> - `Pink Tape` - The 3rd Album</span></em></td>
+				</tr>
+				<tr>
+					<td class="check right another"><input style="vertical-align:middle" type="checkbox" value="4" title="NU 예삐오 (NU ABO) - 선택"></td>
+					<td class="ranking another">4</td>
+					<td class="title left another"><em>NU 예삐오 (NU ABO)<span class="album"> - NU 예삐오</span></em></td>
+				</tr>
+				<tr>
+					<td class="check right"><input style="vertical-align:middle" type="checkbox" value="5" title=" Electric Shock - 선택"></td>
+					<td class="ranking">5</td>
+					<td class="title left"><em>Electric Shock<span class="album"> - Electric Shock</span></em></td>
+				</tr>
+				<tr>
+					<td class="check right another">><input style="vertical-align:middle" type="checkbox" value="6" title="미행(그림자: Shadow) - 선택"></td>
+					<td class="ranking another">6</td>
+					<td class="title left another"><em>미행(그림자: Shadow)<span class="album"> - `Pink Tape`</span></em></td>
+				</tr>
+				<tr>
+					<td class="check right"><input style="vertical-align:middle" type="checkbox" value="7" title="라차타 (LA chA TA) - 선택"></td>
+					<td class="ranking">7</td>
+					<td class="title left"><em>라차타 (LA chA TA)<span class="album"> - 라차타</span></em></td>
+				</tr>
+				<tr>
+					<td class="check right another"><input style="vertical-align:middle" type="checkbox" value="8" title="All Mine - 선택"></td>
+					<td class="ranking another">8</td>
+					<td class="title left another"><em>All Mine<span class="album">&nbsp;-&nbsp;All Mine</span></em></td>
+				</tr>
+				<tr>
+					<td class="check right"><input style="vertical-align:middle" type="checkbox" value="9" title="12시 25분 - 선택"></td>
+					<td class="ranking">9</td>
+					<td class="title left"><em>12시 25분<span class="album"> - 12시 25분 (Wish List)</span></em></td>
+				</tr>
+				<tr>
+					<td class="check right another"><input style="vertical-align:middle" type="checkbox" value="10" title="Special (Feat. Jennie Kim of YG) - 선택"></td>
+					<td class="ranking another">10</td>
+					<td class="title left another"><em>It's Over<span class="album">&nbsp;-&nbsp;LEE&nbsp;HI</span></em></td>
+				</tr>
+				<tr>
+					<td colspan="3" class="left last">
+						<button type="button" class="sp btn_selectbuy"></button>
+						<button type="button" class="sp btn_allbuy"></button>
+					</td>
+				</tr>
+				</tbody>	
+				</table>
+				<!-- /table -->
+			</div>
+			<!-- /songlist -->
+			<div class="alblist">
+				<h3>ALBUM</h3>
+				<ul class="albums">
+			<li>
+				<a href="#" class="thum_list">
+				<img class="albumcover" src="img/album_cover1.jpg" alt="" width="99" height="99">
+				<p class="list_txt">
+					<em>`4 Walls` - The 4th Album</em>
+					<span class="txt_date">2015.10.27</span>
+				</p>
+				</a>
+			</li>
+			<li>
+				<a href="#" class="thum_list">
+				<img class="albumcover" src="img/album_cover2.jpg" alt="" width="99" height="99">
+				<p class="list_txt">
+					<em>`Red Light` - The 3th Album</em>
+					<span class="txt_date">2015.10.27</span>
+				</p>
+				</a>
+			</li>
+			<li>
+				<a href="#" class="thum_list">
+				<img class="albumcover" src="img/album_cover3.jpg" alt="" width="99" height="99">
+				<p class="list_txt">
+					<em>`4 Walls` - The 4th Album</em>
+					<span class="txt_date">2015.10.27</span>
+				</p>
+				</a>
+			</li>
+			<li>
+				<a href="#" class="thum_list">
+				<img class="albumcover" src="img/album_cover4.jpg" alt="" width="99" height="99">
+				<p class="list_txt">
+					<em>`4 Walls` - The 4th Album</em>
+					<span class="txt_date">2015.10.27</span>
+				</p>
+				</a>
+			</li>
+			</ul>
+			<!-- /albums -->
+			</div>
+			<!-- /alblist -->
+			<div class="article videos">
+				<h3>VIDEOS</h3>		
+				<div class="cont_slidewrap">
+					<ul class="cont_slidebx">
+					<li>
+						<ul class="cont_slidebx video">
+			<li>
+				<ul class="cont_list">
+				<li>
+					<a href="#" class="thum_list">
+						<img src="img/thum_vdo1.jpg" alt="" width="105" height="65">
+						<span class="sp btn_play"></span>
+						<p class="list_txt">
+							<em>[STATION] 에프엑스_All Mine_Music Video</em>
+							<span class="txt_date">2016.08.18</span>
+						</p>
+					</a>
+					<!-- /thum_list -->
+				</li>
+				<li>
+					<a href="#" class="thum_list">
+						<img src="img/thum_vdo2.jpg" alt="" width="105" height="65">
+						<span class="sp btn_play"></span>
+						<p class="list_txt">
+							<em>에프엑스_4 Walls_Music Video</em>
+							<span class="txt_date">2015.10.27</span>
+						</p>
+					</a>
+					<!-- /thum_list -->
+				</li>
+				<li>
+					<a href="#" class="thum_list">
+						<img src="img/thum_vdo3.jpg" alt="" width="105" height="65">
+						<span class="sp btn_play"></span>
+						<p class="list_txt">
+							<em>에프엑스_4 Walls_Music Video Teaser</em>
+							<span class="txt_date">2015.10.17</span>
+						</p>
+					</a>
+					<!-- /thum_list -->
+				</li>
+				<li class="last">
+					<a href="#" class="thum_list">
+						<img src="img/thum_vdo4.jpg" alt="" width="105" height="65">
+						<span class="sp btn_play"></span>
+						<p class="list_txt">
+							<em>Red Light_Music Video</em>
+							<span class="txt_date">2014.08.27</span>
+						</p>
+					</a>
+					<!-- /thum_list -->
+				</li>
+				</ul>
+				<!-- /cont_list -->
+					</li>
+					</ul>
+					<!-- /cont_slidebx -->
+				</div>
+				<!-- /cont_slidewrap -->					
+				<a href="#" class="btn_more sp">더보기</a>
+			</div>
+			<!-- /article videos -->
+			<div class="article news">
+				<h3>NEWS</h3>
+				<div class="cont_slidewrap">
+					<ul class="cont_slidebx">
+					<li>
+						<ul class="cont_list">
+						<li>
+							<a href="#" class="thum_list">
+								<img src="img/thum_news1.jpg" alt="" width="105" height="65">
+								<p class="list_txt">
+									<em>'루나의 알파벳 M: Musical 편'....</em>
+									<span class="txt_date">2시간 전</span>
+								</p>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="thum_list">
+								<p class="news_txt">'루나의 알파벳 D: Dog편' 루 감독 제작...</p>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="thum_list">
+								<p class="news_txt">에프엑스 f(x) shared a link.</p>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="thum_list">
+								<p class="news_txt">에프엑스 f(x) shared a link.</p>
+							</a>
+						</li>
+						</ul>
+						<!-- /cont_list -->
+					</li>
+					</ul>
+					<!-- /cont_slidebx -->
+					
+				</div>
+				<!-- /cont_slidewrap -->				
+				<a href="#" class="btn_more sp">더보기</a>
+			</div>
+			<!-- /article news -->
+		</div>
+		<!--/aside -->
+	</div>
+	<div id="footer">
+		<div class="f_logo sp">로고</div>
+		<ul class="policy">
+		<li><a href="#">이용약관</a></li>
+		<li><span class="txt_bar">|</span><a href="#">개인정보취급방침</a></li>
+		<li><span class="txt_bar">|</span><a href="#">고객센터</a></li>
+		</ul>
+		<!-- //policy-->
+		<div class="copyright">
+			<ul>
+			<li>Chungyoung Bldg.3F, 28-5, Youngmun-dong, Yongsan-gu, Seoul, Korea<span class="txt_bar">|</span>SOLSPECTRUM Inc. CEO LEE BO-RAM</li>
+			<li>사업자등록 2015-87-11508<span class="txt_bar">|</span>통신판매 제 2013-서울용산-00042호</li>
+			<li>Copyrights SM TOWN All Rights Reserved</li>
+			</ul>
+		</div>
+		<!-- //copyright-->
+	</div>
+	<!-- //footer -->
+</div>
+<!-- /wrap -->
+</body>
+</html>
